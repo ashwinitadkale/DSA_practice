@@ -19,20 +19,29 @@
 # rev_arr(arr,0,len(arr)-1)
 # print(arr)
 
-def is_palindrome(s, left, right):
-    if left >= right:   # Base case
-        return True
+# def is_palindrome(s, left, right):
+#     if left >= right:   # Base case
+#         return True
     
-    if s[left] != s[right]:   # Mismatch
-        return False
+#     if s[left] != s[right]:   # Mismatch
+#         return False
     
-    return is_palindrome(s, left+1, right-1)
+#     return is_palindrome(s, left+1, right-1)
+
+# # Input
+# s = "madam"
+# print(is_palindrome(s, 0, len(s)-1))
+
+# #fibonacci 
+
+def fib(n):
+    if n <= 1:   # Base case
+        return n
+    return fib(n-1) + fib(n-2)
 
 # Input
-s = "madam"
-print(is_palindrome(s, 0, len(s)-1))
-
-
+N = 6
+print(fib(N))
 
 
 
